@@ -1,15 +1,15 @@
 /*----------------------------------------
 * Banner CSS
 ----------------------------------------*/
-.banner {
+.banner-one {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    &_item {
+    &__item {
         position: relative;
         z-index: 1;
         padding: 190px 0;
-        &_bgimage {
+        &__bgimage {
             position: absolute;
             left: 0;
             top: 0;
@@ -32,7 +32,7 @@
                 z-index: -1;
             }
         }
-        &_content {
+        &__content {
             overflow: hidden;
             position: relative;
             z-index: 99;
@@ -56,7 +56,7 @@
                 transition: transform 1300ms ease, opacity 1300ms ease;
                 transform: translateX(250px);
             }
-            &_button {
+            &__button {
                 transform: perspective(400px) translateY(80px);
                 transform-origin: bottom;
                 transition: all 1500ms ease;
@@ -66,7 +66,7 @@
                 }
             }
         }
-        &_image {
+        &__image {
             position: absolute;
             bottom: 0;
             right: 0;
@@ -75,17 +75,17 @@
             transform-origin: bottom;
             transition: all 1500ms ease;
             opacity: 0;
-            &_one {
+            &__one {
                 max-width: 93%;
             }
-            &_shape {
+            &__shape {
                 position: absolute;
                 bottom: 0;
                 right: 0;
                 z-index: -1;
             }
         }
-        &_icon {
+        &__icon {
             position: absolute;
             left: 0;
             bottom: 0;
@@ -94,8 +94,8 @@
             transform: translateX(-300px);
         }
         &.swiper-slide-active {
-            .banner_item {
-                &_content {
+            .banner-one__item {
+                &__content {
                     h1 {
                         opacity: 1;
                         transform: translateY(0);
@@ -106,32 +106,32 @@
                         transform: translateX(0);
                         transition-delay: 1400ms;
                     }
-                    &_button {
+                    &__button {
                         opacity: 1;
                         transform: perspective(400px) translateY(0px);
                         transition-delay: 1700ms;
                     }
                 }
-                &_image {
+                &__image {
                     opacity: 1;
                     transform: translateY(0px);
                     transition-delay: 1400ms;
                 }
-                &_icon {
+                &__icon {
                     transform: translateX(0);
                     opacity: 1;
                     transition-delay: 1400ms;
                 }
-                &_bgimage {
+                &__bgimage {
                     transform: scale(1.16);
                 }
             }
         }
     }
-    &_pagination {
+    &__pagination {
         position: relative;
         .swiper-pagination-bullets,
-        &_dots {
+        &__dots {
             position: absolute;
             left: 10px;
             bottom: 112px;
@@ -169,17 +169,17 @@
     }
 }
 @media (max-width: 1400px) {
-    .banner_item_content h1 {
+    .banner-one__item__content h1 {
         font-size: 72px;
         line-height: 82px;
         margin-bottom: 18px;
     }
-    .banner_item_image {
+    .banner-one__item__image {
         right: -10%;
     }
 }
 @media (max-width: 1200px) {
-    .banner_item_content {
+    .banner-one__item__content {
         h1 {
             font-size: 64px;
             line-height: 84px;
@@ -193,37 +193,37 @@
             margin-bottom: 30px;
         }
     }
-    .banner_item_image {
+    .banner-one__item__image {
         right: -20%;
-        &_one {
+        &__one {
             max-width: 85%;
         }
-        &_shape {
+        &__shape {
             max-width: 90%;
         }
     }
 }
 @media (max-width: 991px) {
-    .banner_item_icon,
-    .banner_item_image {
+    .banner-one__item__icon,
+    .banner-one__item__image {
         display: none;
     }
 }
 @media (max-width: 620px) {
-    .banner_item_content h1 {
+    .banner-one__item__content h1 {
         font-size: 50px;
         line-height: 60px;
     }
 }
 @media (max-width: 470px) {
-    .banner_item_content h1 {
+    .banner-one__item__content h1 {
         font-size: 38px;
         line-height: 50px;
     }
-    .banner_item {
+    .banner-one__item {
         padding: 150px 0;
     }
-    .banner_pagination .swiper-pagination-bullets, .banner_pagination_dots {
+    .banner-one__pagination .swiper-pagination-bullets, .banner-one__pagination__dots {
         bottom: 65px;
     }
 }

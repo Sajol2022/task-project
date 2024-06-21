@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
     // Banner Slider
-	var swiper = new Swiper(".banner_slider", {
+	var swiper = new Swiper(".banner-one__slider", {
 		slidesPerView: 1,
 		loop: true,
 		speed: 2000,
@@ -11,7 +11,7 @@
 			disableOnInteraction: false,
 		},
 		pagination: {
-		  el: ".banner_pagination_dots",
+		  el: ".banner-one__pagination__dots",
 		  clickable: true,
 		},
 	});

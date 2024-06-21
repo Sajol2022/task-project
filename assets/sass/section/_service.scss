@@ -1,26 +1,25 @@
 /*----------------------------------------
 * Service CSS
 ----------------------------------------*/
-.service {
+.service-one {
     background: var(--bg-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    &-title {
+    &__title {
         text-align: center;
         max-width: 620px;
         margin: 0 auto;
-        margin-bottom: 25px;
+        padding-bottom: 50px;
     }
-    &_item {
+    &__item {
         background: var(--color-white);
         border-radius: 15px;
         padding: 30px;
-        margin-top: 25px;
         position: relative;
         z-index: 1;
         overflow: hidden;
-        &_icon {
+        &__icon {
             width: 70px;
             height: 70px;
             display: flex;
@@ -31,13 +30,14 @@
             margin-bottom: 10px;
 
         }
-        &_content {
+        &__content {
             p {
                 line-height: 24px;
                 margin: 10px 0 18px 0;
+                font-weight: 500;
             }
         }
-        &_button {
+        &__button {
             a {
                 text-decoration: none;
                 color: var(--primary-color);
@@ -50,7 +50,7 @@
                 display: inline-block;
             }
         }
-        &_hover {
+        &__hover {
             position: absolute;
             left: 0;
             bottom: 0;
@@ -61,7 +61,7 @@
             background-size: cover;
             opacity: 0;
             transition: 0.4s;
-            &_content {
+            &__content {
                 display: flex;
                 align-items: center;
                 gap: 18px;
@@ -73,7 +73,7 @@
                 width: 100%;
                 transition: 0.4s;
                 transform: translateY(20px);
-                &_icon {
+                &__icon {
                     width: 40px;
                     height: 40px;
                     display: flex;
@@ -91,9 +91,9 @@
             }
         }
         &:hover {
-            .service_item_hover {
+            .service-one__item__hover {
                 opacity: 1;
-                &_content {
+                &__content {
                     transform: translateY(0px);
                 }
             }

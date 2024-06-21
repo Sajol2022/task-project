@@ -1,10 +1,10 @@
 /*----------------------------------------
 * About CSS
 ----------------------------------------*/
-.about {
-    &_left {
-        &_content {
-            &_title {
+.about-one {
+    &__left {
+        &__content {
+            &__title {
                 padding-left: 45px;
                 position: relative;
                 margin-bottom: 18px;
@@ -19,16 +19,17 @@
                     border-radius: 16px;
                 }
             }
-            &_des {
+            &__des {
                 margin-bottom: 24px;
             }
-            &_feature {
-                &_item {
+            &__feature {
+                &__item {
                     background: var(--bg-color);
                     border-radius: 15px;
-                    padding: 30px 0;
+                    padding-top: 30px;
+                    padding-bottom: 25px;
                     margin-bottom: 24px;
-                    &_icon {
+                    &__icon {
                         height: 48px;
                         display: inline-flex;
                         align-items: center;
@@ -37,7 +38,7 @@
                         margin-bottom: 10px;
                         padding: 0 15px 0 24px;
                     }
-                    &_content {
+                    &__content {
                         padding: 0 24px;
                         h6 {
                             font-size: 20px;
@@ -56,7 +57,7 @@
                     }
                 }
             }
-            &_list {
+            &__list {
                 p {
                     color: var(--heading-color);
                     margin-bottom: 16px;
@@ -69,22 +70,22 @@
                     }
                 }
             }
-            &_button {
+            &__button {
                 margin-top: 30px;
             }
         }
     }
-    &_right {
-        &_thumb {
+    &__right {
+        &__thumb {
             position: relative;
             z-index: 1;
             display: flex;
             gap: 17px;
             justify-content: end;
-            &_icon {
+            &__icon {
                 position: absolute;
                 top: 60px;
-                left: -25px;
+                left: -15px;
                 z-index: 2;
                 width: 118px;
                 height: 118px;
@@ -96,28 +97,28 @@
                 background: var(--bg-color);
                 animation: bounce-y 5s infinite linear;
             }
-            &_item {
+            &__item {
                 position: relative;
                 z-index: 1;
                 img {
                     border-radius: 30px;
                 }
-                &_shape {
+                &__shape {
                     position: absolute;
                     bottom: -1px;
                     right: -1px;
                 }
             }
-            &_experience {
+            &__experience {
                 position: absolute;
-                left: -20px;
+                left: 0;
                 bottom: -10px;
                 padding: 30px 50px;
                 border: 10px solid var(--color-white);
                 background: var(--heading-color);
                 border-radius: 112px;
                 z-index: 3;
-                &_year {
+                &__year {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -134,7 +135,7 @@
                         color: var(--color-white);
                     }
                 }
-                &_client {
+                &__client {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -154,11 +155,11 @@
     }
 }
 @media (max-width: 991px) {
-    .about_right {
+    .about-one__right {
         margin-top: 25px;
         padding-left: 10px;
     }
-    .about_right_thumb_icon {
+    .about-one__right__thumb__icon {
         left: -20px;
         width: 90px;
         height: 90px;
@@ -169,28 +170,28 @@
     }
 }
 @media (max-width: 460px) {
-    .about_left_content_title::after {
+    .about-one__left__content__title::after {
         height: 90%;
         width: 12px;
     }
-    .about_left_content_title {
+    .about-one__left__content__title {
         padding-left: 35px;
     }
 }
 @media (max-width: 390px) {
-    .about_right_thumb_experience {
+    .about-one__right__thumb__experience {
         position: absolute;
         left: -15px;
         padding: 25px 30px;
         border-radius: 90px;
     }
-    .about_right_thumb_icon {
+    .about-one__right__thumb__icon {
         top: 20px;
     }
-    .about_right_thumb_item img {
+    .about-one__right__thumb__item img {
         border-radius: 15px;
     }
-    .about_right_thumb_experience_client img {
+    .about-one__right__thumb__experience__client img {
         max-width: 85px;
     }
 }
