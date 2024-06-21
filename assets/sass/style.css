@@ -262,7 +262,7 @@ Banner CSS
   transition-delay: 1400ms;
 }
 .banner_item.swiper-slide-active .banner_item_bgimage {
-  transform: scale(1.1);
+  transform: scale(1.16);
 }
 .banner_pagination {
   position: relative;
