@@ -29,7 +29,7 @@ img {
 }
 
 p {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1,
@@ -600,6 +600,7 @@ Color & Font CSS
   background: var(--color-white);
   border-radius: 15px;
   padding: 30px;
+  padding-right: 28px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -617,7 +618,6 @@ Color & Font CSS
 .service-one__item__content p {
   line-height: 24px;
   margin: 10px 0 18px 0;
-  font-weight: 500;
 }
 .service-one__item__button a {
   text-decoration: none;

@@ -16,6 +16,7 @@
         background: var(--color-white);
         border-radius: 15px;
         padding: 30px;
+        padding-right: 28px;
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -34,7 +35,6 @@
             p {
                 line-height: 24px;
                 margin: 10px 0 18px 0;
-                font-weight: 500;
             }
         }
         &__button {
