@@ -1,0 +1,196 @@
+/*----------------------------------------
+About CSS
+----------------------------------------*/
+.about {
+    &_left {
+        &_content {
+            &_title {
+                padding-left: 45px;
+                position: relative;
+                margin-bottom: 18px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                    width: 14px;
+                    height: 88%;
+                    background: var(--primary-color);
+                    border-radius: 16px;
+                }
+            }
+            &_des {
+                margin-bottom: 24px;
+            }
+            &_feature {
+                &_item {
+                    background: var(--bg-color);
+                    border-radius: 15px;
+                    padding: 30px 0;
+                    margin-bottom: 24px;
+                    &_icon {
+                        height: 48px;
+                        display: inline-flex;
+                        align-items: center;
+                        border-radius: 0 50px 50px 0;
+                        background: var(--primary-color);
+                        margin-bottom: 10px;
+                        padding: 0 15px 0 24px;
+                    }
+                    &_content {
+                        padding: 0 24px;
+                        h6 {
+                            font-size: 20px;
+                            line-height: 30px;
+                            margin-bottom: 6px;
+                        }
+                        p {
+                            line-height: 24px;
+                            margin-bottom: 0;
+                        }
+                    }
+                    &:hover {
+                        img {
+                            animation: rotateY 0.9s ease 0s;
+                        }
+                    }
+                }
+            }
+            &_list {
+                p {
+                    color: var(--heading-color);
+                    margin-bottom: 16px;
+                    display: flex;
+                    align-items: center;
+                    gap: 18px;
+                    line-height: 22px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &_button {
+                margin-top: 30px;
+            }
+        }
+    }
+    &_right {
+        &_thumb {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 17px;
+            justify-content: end;
+            &_icon {
+                position: absolute;
+                top: 60px;
+                left: -25px;
+                z-index: 2;
+                width: 118px;
+                height: 118px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 10px solid var(--color-white);
+                background: var(--bg-color);
+                animation: bounce-y 5s infinite linear;
+            }
+            &_item {
+                position: relative;
+                z-index: 1;
+                img {
+                    border-radius: 30px;
+                }
+                &_shape {
+                    position: absolute;
+                    bottom: -1px;
+                    right: -1px;
+                }
+            }
+            &_experience {
+                position: absolute;
+                left: -20px;
+                bottom: -10px;
+                padding: 30px 50px;
+                border: 10px solid var(--color-white);
+                background: var(--heading-color);
+                border-radius: 112px;
+                z-index: 3;
+                &_year {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                    h2 {
+                        color: var(--primary-color);
+                        padding-right: 25px;
+                        margin-right: 20px;
+                        border-right: 1px solid #393942;
+                    }
+                    span {
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: var(--color-white);
+                    }
+                }
+                &_client {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    background: #393942;
+                    border-radius: 76px;
+                    padding: 10px;
+                    padding-right: 25px;
+                    span {
+                        line-height: 20px;
+                        font-weight: 700;
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .about_right {
+        margin-top: 25px;
+        padding-left: 10px;
+    }
+    .about_right_thumb_icon {
+        left: -20px;
+        width: 90px;
+        height: 90px;
+        border-width: 8px;
+        img {
+            max-width: 40px;
+        }
+    }
+}
+@media (max-width: 460px) {
+    .about_left_content_title::after {
+        height: 90%;
+        width: 12px;
+    }
+    .about_left_content_title {
+        padding-left: 35px;
+    }
+}
+@media (max-width: 390px) {
+    .about_right_thumb_experience {
+        position: absolute;
+        left: -15px;
+        padding: 25px 30px;
+        border-radius: 90px;
+    }
+    .about_right_thumb_icon {
+        top: 20px;
+    }
+    .about_right_thumb_item img {
+        border-radius: 15px;
+    }
+    .about_right_thumb_experience_client img {
+        max-width: 85px;
+    }
+}
