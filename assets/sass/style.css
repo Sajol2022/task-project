@@ -1,17 +1,20 @@
 /*----------------------------------------
-Color & Font CSS
+TABLE OF CONTENTS
+------------------------------------------
+* Google Font
+* Default CSS
+* Color & Font CSS
+* Banner CSS
+* About CSS
+* Service CSS
+----------------------------------------*/
+/*----------------------------------------
+* Google Font
 ----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Quicksand:wght@300..700&display=swap");
-:root {
-  --body-font: "DM Sans", sans-serif;
-  --heading-font: "Quicksand", sans-serif;
-  --primary-color: #FA575D;
-  --color-white: #FFFFFF;
-  --body-color: #898989;
-  --heading-color: #20212B;
-  --bg-color: #FFF3F3;
-}
-
+/*----------------------------------------
+* Default CSS
+----------------------------------------*/
 body {
   font-family: var(--body-font);
   color: var(--body-color);
@@ -140,7 +143,20 @@ h6 {
   }
 }
 /*----------------------------------------
-Banner CSS
+Color & Font CSS
+----------------------------------------*/
+:root {
+  --body-font: "DM Sans", sans-serif;
+  --heading-font: "Quicksand", sans-serif;
+  --primary-color: #FA575D;
+  --color-white: #FFFFFF;
+  --body-color: #898989;
+  --heading-color: #20212B;
+  --bg-color: #FFF3F3;
+}
+
+/*----------------------------------------
+* Banner CSS
 ----------------------------------------*/
 .banner {
   position: relative;
@@ -361,7 +377,7 @@ Banner CSS
   }
 }
 /*----------------------------------------
-About CSS
+* About CSS
 ----------------------------------------*/
 .about_left_content_title {
   padding-left: 45px;
@@ -544,7 +560,7 @@ About CSS
   }
 }
 /*----------------------------------------
-Service CSS
+* Service CSS
 ----------------------------------------*/
 .service {
   background: var(--bg-color);

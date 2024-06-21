@@ -1,5 +1,22 @@
+/*----------------------------------------
+TABLE OF CONTENTS
+------------------------------------------
+* Google Font
+* Default CSS
+* Color & Font CSS
+* Banner CSS
+* About CSS
+* Service CSS
+----------------------------------------*/
+
+/*----------------------------------------
+* Google Font
+----------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Quicksand:wght@300..700&display=swap');
 
+/*----------------------------------------
+* Default CSS
+----------------------------------------*/
 body {
 	font-family: var(--body-font);
 	color: var(--body-color);
